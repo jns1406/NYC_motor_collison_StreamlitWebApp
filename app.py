@@ -31,7 +31,7 @@ add_bg_from_url()
 
 
 
-data_url = ("https://github.com/jns1406/NYC_motor_collison_StreamlitWebApp/blob/main/NYC_Motor_Collision_2022.csv")
+data_url = ("https://github.com/jns1406/NYC_motor_collison_StreamlitWebApp/blob/main/NYC_Motor_Collision_2022.csv?raw=True")
 
 
 
