@@ -13,7 +13,11 @@ import io
 
 
 
-st.set_page_config(page_title="NYC Motor Collision Analysis",page_icon=":car:", layout = "wide")
+# st.set_page_config(page_title="NYC Motor Collision Analysis",page_icon=":car:", layout = "wide")
+# import streamlit as st
+
+st.set_page_config(page_title="NYC Motor Collision Analysis", page_icon=":smiley:", layout="wide", initial_sidebar_state="expanded", url="https://jns1406.github.io/NYC_motor_collison_StreamlitWebApp/")
+
 
 
 def add_bg_from_url():
