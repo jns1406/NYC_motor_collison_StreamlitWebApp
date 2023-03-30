@@ -7,9 +7,6 @@ import folium
 from streamlit_folium import folium_static
 import datetime
 import plotly.graph_objects as go
-import requests
-import io
-
 
 
 
@@ -92,7 +89,7 @@ if not data.empty:
     # Create a Hexbin map
     accident_map = folium.Map(location=ny_coord, zoom_start=10)
     mc = folium.plugins.MarkerCluster(control=False)
-    mc.add_children(folium.plugins.FastMarkerCluster(data[["latitude", "longitude"]].values))
+    mc.add_child(folium.plugins.FastMarkerCluster(data[["latitude", "longitude"]].values))
     hexbin = folium.plugins.HeatMap(data[["latitude", "longitude"]], radius=25, min_opacity=0.5, max_val=10, show=True, overlay=True, control=False)
     hexbin.layer_name = 'Accident Density'
     hexbin.add_to(accident_map)
